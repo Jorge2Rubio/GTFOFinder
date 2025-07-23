@@ -6,23 +6,23 @@ You get two things:<br>
 
 - .gtfodata/ - A folder full of cheat sheets for breaking shit.<br>
 
-### How to Use This Damn Thing<br>
+## How to Use This Damn Thing<br>
 
-1. Unzip It<br>
+### Unzip It<br>
+```
 unzip gtfo-bundle.zip
+```
 
-2. Run the Scanner<br>
-Make it executable and fire it up:<br>
-chmod +x gtfo.sh <br>
-./gtfo.sh <br>
+### Run the Scanner<br>
+```
+chmod +x gtfo.sh 
+./gtfo.sh 
+```
 
-3. What You'll See <br>
+What You'll See <br>
 The script hunts for SUID/SGID binaries (the kind that can give you root if they're fucked up). When it finds one, it shows: <br>
-
 Where the binary is (like /usr/bin/sudo) <br>
-
 What you can do with it (like sudo or shell tricks) <br>
-
 The actual commands to run (copypasta this shit) <br>
 
 Example output: <br>
@@ -36,12 +36,13 @@ Example output: <br>
 How to Read the GTFOBins Cheat Sheets <br>
 Every file in .gtfodata/ (like sudo.md) has exploit recipes like this: <br>
 
-functions: <br>
-  sudo: <br>
-    - code: sudo sudo /bin/sh <br>
-  shell: <br>
-    - code: sudo -u root /bin/sh <br>
-
+```
+functions: 
+  sudo: 
+    - code: sudo sudo /bin/sh 
+  shell: 
+    - code: sudo -u root /bin/sh 
+```
 functions: - Different ways to abuse it. <br>
 sudo: - How to turn sudo into a root shell. <br>
 shell: - How to spawn a shell directly. <br>
