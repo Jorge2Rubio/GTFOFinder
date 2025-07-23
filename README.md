@@ -16,7 +16,6 @@ unzip gtfo-bundle.zip
 2. Run the Scanner<br>
 Make it executable and fire it up:<br>
 
-bash
 chmod +x gtfo.sh  
 ./gtfo.sh
 
@@ -32,7 +31,6 @@ The actual commands to run (copypasta this shit) <br>
 
 Example output: <br>
 
-text
 [!] Found something juicy: /usr/bin/sudo
  [>] Tricks you can pull: sudo, shell
  [>] Sudo exploit:
