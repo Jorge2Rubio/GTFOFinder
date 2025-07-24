@@ -19,13 +19,8 @@ chmod +x gtfo.sh
 ./gtfo.sh 
 ```
 
-What You'll See <br>
+## What You'll See <br>
 The script hunts for SUID/SGID binaries (the kind that can give you root if they're fucked up). When it finds one, it shows: <br>
-Where the binary is (like /usr/bin/sudo) <br>
-What you can do with it (like sudo or shell tricks) <br>
-The actual commands to run (copypasta this shit) <br>
-
-Example output: <br>
 
 [!] Found something juicy: /usr/bin/sudo <br>
  [>] Tricks you can pull: sudo, shell <br>
@@ -33,7 +28,8 @@ Example output: <br>
     sudo sudo /bin/sh <br>
  [>] Shell exploit: <br>
     sudo -u root /bin/sh <br>
-How to Read the GTFOBins Cheat Sheets <br>
+    
+## How to Read the GTFOBins Cheat Sheets <br>
 Every file in .gtfodata/ (like sudo.md) has exploit recipes like this: <br>
 
 ```
